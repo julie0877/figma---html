@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: hsl(201, 11%, 66%); 
+  background-color: #ffffff;
+  background-image: url(Bitmap2.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 363px;
+  
+  text-align: center;
+}
+
+
+.hero {
+  max-width: 375px;
+  padding: 48px 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+
+.logo-grande {
+  margin-bottom: 48px;
+}
+
+
+.logo {
+  width: 125px;
+  height: auto;
+}
+
+
+.title {
+  color: #4c545c;
+  font-size: 32px;
+  font-weight: 600;
+ margin-bottom: 16px;
+}
+
+
+.description {
+  color: #9fabb2;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 48px;
+}
+
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+ 
+}
+
+
+.btn-ios {
+  background-color: #26baa4;
+  box-shadow: 0px 10px 20px rgba(38, 186, 164, 0.25);
+}
+
+
+.btn-mac {
+  background-color: #6173ff;
+  box-shadow: 0px 10px 20px rgba(97, 115, 255, 0.25);
+}
+
+.ferramenta {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+
+
+
+.ferramenta-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 80px;
+}
+
+
+
+
+.ferramenta-image {
+  margin-left: 0; 
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.ferramenta-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.ferramenta-list {
+  flex: 1;
+  text-align: left;
+}
+
+/* Reset básico e variáveis de cores */
+:root {
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: var(--grayish-blue);
+  line-height: 1.6;
+}
+
+
+/* Estilização da Section */
+.snippets-section {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 80px 24px;
+  text-align: center;
+}
+
+
+/* Cabeçalho */
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 64px auto;
+}
+
+
+.section-header h2 {
+  color: var(--dark-grayish-blue);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+
+.section-header p {
+  font-size: 1.05rem;
+}
+
+
+/* Container da Imagem e dos Recursos */
+.snippets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+
+
+/* Região Selecionada: Imagem do Monitor */
+.computer-image img {
+  width: 100%;
+  max-width: 608px; /* Largura exata destacada na imagem */
+  height: auto;
+  display: block;
+}
+
+
+/* Lista de Recursos */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 350px;
+}
+
+
+.feature-item h3 {
+  color: var(--dark-grayish-blue);
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+
+.feature-item p {
+  font-size: 0.95rem;
+}
+
+
+/* Adaptação para Telas Maiores (Desktop) */
+@media (min-width: 900px) {
+  .snippets-content {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 80px;
+  }
+
+
+  .computer-image {
+    flex: 1;
+  }
+
+
+  .features-list {
+    flex: 1;
+  }
+}
